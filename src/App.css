@@ -1,0 +1,130 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.header {
+  padding: 2rem;
+  color: white;
+}
+
+.input-text textarea {
+  width: 95%;
+  height: 120px;
+  background-color: #1c1c28;
+  color: #ffffff;
+  border: 1px solid #2c2c3b;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0 3rem 0 3rem;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 5rem 0 5rem;
+}
+
+.subtitle {
+  font-size: 4rem;
+}
+
+.content1 .grid-text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin: 0 3rem 0 3em;
+}
+
+/*Box*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 3rem 0 3rem;
+}
+
+.grid-container .box1 {
+  background-color: #d3a4f4;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: black;
+}
+
+.grid-container .box2 {
+  background-color: #ffb300;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: black;
+}
+
+.grid-container .box3 {
+  background-color: #ff7e6c;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: black;
+}
+
+.grid-container h3 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.grid-container p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.Density{
+  margin:3rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .input-text input {
+    height: auto;
+    min-height: 120px;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .content1 .grid-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+
+  .grid-container h3 {
+    font-size: 32px;
+  }
+
+  .grid-container p {
+    font-size: 16px;
+  }
+}
+
